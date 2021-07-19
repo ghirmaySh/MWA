@@ -1,0 +1,12 @@
+{
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "my first fibonacci lab",
+  "main": "fibonacci.js",
+  "scripts": {
+    "start": "node lab01.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ghirmay Shinash",
+  "license": "ISC"
+}

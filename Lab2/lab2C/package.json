@@ -1,0 +1,15 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "Get all Games",
+  "main": "labTwoC.js",
+  "scripts": {
+    "start": "node labTwoC.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ghirmay Shinash",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

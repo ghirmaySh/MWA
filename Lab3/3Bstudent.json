@@ -1,0 +1,22 @@
+[{
+	"_id": {
+		"$oid": "60f89dcd1c2e2a27d89bce0f"
+	},
+	"name": "John",
+	"GPA": 3.3
+},
+{
+	"_id": {
+		"$oid": "60f89df71c2e2a27d89bce10"
+	},
+	"name": "James",
+	"GPA": 2.5
+},
+{
+	"_id": {
+		"$oid": "60f89e241c2e2a27d89bce11"
+	},
+	"name": "Jasmin",
+	"GPA": 2.5
+}]
+

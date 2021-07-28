@@ -1,0 +1,21 @@
+{
+  "name": "meantenis",
+  "version": "1.0.0",
+  "description": "Week one project",
+  "main": "app01.js",
+  "scripts": {
+    "start": "nodemon app01.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ghirmay Shinash",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-route": "^1.8.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.13.03",
+    "nodemon": "^2.0.12"
+  }
+}

@@ -1,0 +1,21 @@
+<h1>
+    {{vm.name}}
+</h1>
+<ul>
+    <li ng-repeat="player in vm.players">
+        <a ng-href="#!/players/{{player._id}}">{{player.name}}</a>
+    </li>
+</ul>
+
+<form name="vm.playerForm" ng-submit="vm.addPlayer()">
+    to add a new Player please fill in the fields:<br>
+    Name: <input type="text" name="name" required ng-model="vm.newName" style="color: black;"></br>
+    Age: <input type="text" name="age" required ng-model="vm.newAge" style="color: black;"></br>
+    Country: <input type="text" name="country" required ng-model="vm.newCountry" style="color: black;"></br>
+    Rank: <input type="text" name="rating" required ng-model="vm.newRank" style="color: black;"></br>
+    Networth: <input type="text" name="minPlayers" required ng-model="vm.newNetworth" style="color: black;"
+        ng-pattern="/^[1-9][0,9]{0,1}$/"></br>
+    <!-- <span ng-show="vm.gameForm.minPlayers.$invalid && vm.gameForm.minPlayers.$dirty">player should be between 1 and
+        100</span> -->
+    <button type="submit" class="btn-success">Add Player</button></br>
+</form>

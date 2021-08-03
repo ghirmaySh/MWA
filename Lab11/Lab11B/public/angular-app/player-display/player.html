@@ -1,0 +1,45 @@
+<div style="padding: 30px;">
+    <div ng-show="vm.deleteSuccess" class="alert alert-success" role="alert">
+        Plalyer is successfully deleted
+    </div>
+
+    <div ng-show="vm.deleteSuccess == false" class="alert alert-danger" role="alert">
+        Error while deleting Player
+    </div>
+
+    <h2 style="padding-bottom: 10px;">
+        Information about the Player
+
+    </h2>
+
+    <p>
+        Name: {{vm.player.name}}<br>
+        Country:{{vm.player.country}}<br>
+        Age: {{vm.player.age}}<br>
+        Rank: {{vm.player.rank}} <br>
+        NetWorth: {{vm.player.netWorth}}<br>
+
+    </p>
+
+    <button class="btn  btn-danger" ng-click="vm.deletePlayer(vm.player._id)">Delete</button>
+    <button class="btn  btn-success" ng-show="vm.show=='edit'" ng-click="vm.editPlayer()">edit</button>
+
+</div>
+
+<form name="vm.playerForm" ng-show="vm.show=='update'" ng-submit="vm.updatePlayer()">
+    <h5> Edit Player </h5>
+    Name: <input type="text" name="name" required ng-model="vm.name" style="color:black" /><BR />
+    Country: <input type="text" name="country" required ng-model="vm.country" style="color:black" /><BR />
+    Age: <input type="text" name="age" required ng-model="vm.age" style="color:black" /><BR />
+    Rank: <input type="text" name="rank" required ng-model="vm.rank" style="color:black" /><BR />
+    NetWorth: <input type="text" name="netWorth" required ng-model="vm.netWorth" style="color:black" /><BR />
+
+    <button type="submit" class="btn-success">Update</button><BR />
+
+</form>
+
+<style>
+    input {
+        margin: 10px;
+    }
+</style>
